@@ -6,6 +6,9 @@ html {
 *::before {
   box-sizing: inherit; }
 
+* {
+  font-family: sans-serif; }
+
 header {
   max-width: 68em;
   margin-left: auto;
@@ -143,7 +146,8 @@ section.pitch {
     font-size: 25px;
     margin: 60px 0px 20px 0px;
     letter-spacing: 3px;
-    font-weight: lighter; }
+    font-weight: lighter;
+    margin-right: 15%; }
   section.pitch p {
     font-size: 20px;
     font-weight: lighter;
@@ -151,15 +155,35 @@ section.pitch {
     margin-right: 15%; }
 
 footer {
-  padding-top: 30px;
+  padding: 20px 10% 0px 10%;
   height: 100px;
   width: 100%;
   background-color: #111111;
   color: #888888;
   text-align: center;
   margin: 0px;
-  max-width: none; }
-  footer br {
-    font-size: 23px; }
+  max-width: none;
+  line-height: 30px;
+  font-size: 16px; }
   footer a {
     color: #DDDDDD; }
+
+@media (max-width: 478px) {
+  * {
+    overflow-x: hidden; }
+  figure {
+    padding: 0px;
+    max-width: 478px;
+    overflow-x: hidden;
+    overflow-y: hidden; }
+    figure button {
+      overflow: hidden; } }
+
+@media (min-width: 479px), (max-width: 767px) {
+  header figure {
+    height: 400px; }
+  header h1 {
+    bottom: 250px;
+    font-size: 46px; }
+  footer {
+    padding: 20px 7% 0px 7%; } }

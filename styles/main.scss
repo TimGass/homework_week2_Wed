@@ -1,6 +1,9 @@
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../bower_components/neat/app/assets/stylesheets/neat";
 
+*{
+  font-family: sans-serif;
+}
 header{
   @include outer-container;
   padding: 0px;
@@ -166,6 +169,7 @@ section.pitch{
     margin: 60px 0px 20px 0px;
     letter-spacing: 3px;
     font-weight: lighter;
+    margin-right: 15%;
   }
 
   p{
@@ -177,7 +181,7 @@ section.pitch{
 }
 
 footer{
-  padding-top: 30px;
+  padding: 20px 10% 0px 10%;
   height: 100px;
   width: 100%;
   background-color: #111111;
@@ -185,11 +189,43 @@ footer{
   text-align: center;
   margin: 0px;
   max-width: none;
-
-  br{
-    font-size: 23px;
-  }
+  line-height: 30px;
+  font-size: 16px;
   a{
     color: #DDDDDD;
+  }
+}
+
+@media (max-width:478px) {
+  *{
+    overflow-x: hidden;
+  }
+  figure{
+    padding: 0px;
+    max-width: 478px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    button{
+    overflow:hidden;
+  }
+  }
+}
+
+@media (min-width:479px), (max-width:767px) {
+
+  header{
+    figure{
+      height: 400px;
+    }
+
+    h1{
+      bottom: 250px;
+      font-size: 46px;
+    }
+  }
+
+  footer{
+    padding: 20px 7% 0px 7%;
   }
 }
