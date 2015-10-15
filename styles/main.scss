@@ -229,3 +229,53 @@ footer{
     padding: 20px 7% 0px 7%;
   }
 }
+
+@media (min-width:768px), (max-width:978px) {
+    main{
+    section{
+      display: block;
+      @include span-columns(4);
+      margin: auto;
+      clear: none;
+      @include shift(.15);
+
+      figure{
+        margin:2.5%;
+      }
+      ul{
+        li{
+          font-size: 16px;
+        }
+      }
+    }
+
+    section.pitch{
+      @include outer-container;
+      @include span-columns(12);
+      display: block;
+      article{
+        @include span-columns(5);
+        display: block;
+        margin: 0px;
+        @include shift(1);
+
+        h4{
+          margin-left: 0px;
+          margin-right: 0px;
+          font-size: 20px;
+        }
+        p{
+          margin-left: 0px;
+          margin-right: 0px;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      }
+  }
+
+  footer{
+    height: 75px;
+    padding-top: 20px;
+  }
+}

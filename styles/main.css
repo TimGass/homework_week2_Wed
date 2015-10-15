@@ -187,3 +187,57 @@ footer {
     font-size: 46px; }
   footer {
     padding: 20px 7% 0px 7%; } }
+
+@media (min-width: 768px), (max-width: 978px) {
+  main section {
+    display: block;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin: auto;
+    clear: none;
+    margin-left: 1.27947%; }
+    main section:last-child {
+      margin-right: 0; }
+    main section figure {
+      margin: 2.5%; }
+    main section ul li {
+      font-size: 16px; }
+  main section.pitch {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    display: block; }
+    main section.pitch::after {
+      clear: both;
+      content: "";
+      display: table; }
+    main section.pitch:last-child {
+      margin-right: 0; }
+    main section.pitch article {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%;
+      display: block;
+      margin: 0px;
+      margin-left: 8.5298%; }
+      main section.pitch article:last-child {
+        margin-right: 0; }
+      main section.pitch article h4 {
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 20px; }
+      main section.pitch article p {
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 16px;
+        line-height: 24px; }
+  footer {
+    height: 75px;
+    padding-top: 20px; } }
