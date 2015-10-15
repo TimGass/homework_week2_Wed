@@ -279,3 +279,20 @@ footer{
     padding-top: 20px;
   }
 }
+
+@media (min-width:979px) {
+  header{
+  margin-bottom: 40px;
+  }
+  main{
+    @include shift(1);
+    section{
+      @include shift(0);
+      @include span-columns(3.5);
+      margin-right: 0;
+    }
+    section.pitch{
+      @include shift(-.6);
+    }
+  }
+}
